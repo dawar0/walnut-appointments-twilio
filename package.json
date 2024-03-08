@@ -1,0 +1,28 @@
+{
+  "name": "walnut-voice",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "tsc",
+    "start": "twilio-run",
+    "predeploy": "tsc",
+    "deploy": "twilio-run deploy"
+  },
+  "dependencies": {
+    "@twilio-labs/serverless-runtime-types": "^3.0.0",
+    "@twilio/runtime-handler": "1.3.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.4",
+    "twilio": "^3.56"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/twilio": "^3.19.3",
+    "twilio-run": "^3.5.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
